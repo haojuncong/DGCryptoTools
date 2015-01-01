@@ -12,8 +12,8 @@
 		C215A2101A54D2D700FAABF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C215A20F1A54D2D700FAABF8 /* ViewController.m */; };
 		C215A2131A54D2D700FAABF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C215A2111A54D2D700FAABF8 /* Main.storyboard */; };
 		C215A2151A54D2D700FAABF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C215A2141A54D2D700FAABF8 /* Images.xcassets */; };
-		C215A2181A54D2D700FAABF8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C215A2161A54D2D700FAABF8 /* LaunchScreen.xib */; };
-		C215A2241A54D2D700FAABF8 /* DGCryptoToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C215A2231A54D2D700FAABF8 /* DGCryptoToolsTests.m */; };
+		C215A2301A54D35D00FAABF8 /* DGCryptoTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C215A22F1A54D35D00FAABF8 /* DGCryptoTools.m */; };
+		C215A2321A54D58E00FAABF8 /* Base64Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C215A2311A54D58E00FAABF8 /* Base64Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +36,11 @@
 		C215A20F1A54D2D700FAABF8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C215A2121A54D2D700FAABF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C215A2141A54D2D700FAABF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C215A2171A54D2D700FAABF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C215A21D1A54D2D700FAABF8 /* DGCryptoToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DGCryptoToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C215A2221A54D2D700FAABF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C215A2231A54D2D700FAABF8 /* DGCryptoToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGCryptoToolsTests.m; sourceTree = "<group>"; };
+		C215A22E1A54D35D00FAABF8 /* DGCryptoTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGCryptoTools.h; sourceTree = "<group>"; };
+		C215A22F1A54D35D00FAABF8 /* DGCryptoTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGCryptoTools.m; sourceTree = "<group>"; };
+		C215A2311A54D58E00FAABF8 /* Base64Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +82,13 @@
 		C215A2061A54D2D600FAABF8 /* DGCryptoTools */ = {
 			isa = PBXGroup;
 			children = (
+				C215A22D1A54D34700FAABF8 /* DGCryptoTools */,
 				C215A20B1A54D2D600FAABF8 /* AppDelegate.h */,
 				C215A20C1A54D2D700FAABF8 /* AppDelegate.m */,
 				C215A20E1A54D2D700FAABF8 /* ViewController.h */,
 				C215A20F1A54D2D700FAABF8 /* ViewController.m */,
 				C215A2111A54D2D700FAABF8 /* Main.storyboard */,
 				C215A2141A54D2D700FAABF8 /* Images.xcassets */,
-				C215A2161A54D2D700FAABF8 /* LaunchScreen.xib */,
 				C215A2071A54D2D600FAABF8 /* Supporting Files */,
 			);
 			path = DGCryptoTools;
@@ -105,7 +106,7 @@
 		C215A2201A54D2D700FAABF8 /* DGCryptoToolsTests */ = {
 			isa = PBXGroup;
 			children = (
-				C215A2231A54D2D700FAABF8 /* DGCryptoToolsTests.m */,
+				C215A2311A54D58E00FAABF8 /* Base64Tests.m */,
 				C215A2211A54D2D700FAABF8 /* Supporting Files */,
 			);
 			path = DGCryptoToolsTests;
@@ -117,6 +118,15 @@
 				C215A2221A54D2D700FAABF8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C215A22D1A54D34700FAABF8 /* DGCryptoTools */ = {
+			isa = PBXGroup;
+			children = (
+				C215A22E1A54D35D00FAABF8 /* DGCryptoTools.h */,
+				C215A22F1A54D35D00FAABF8 /* DGCryptoTools.m */,
+			);
+			path = DGCryptoTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +210,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C215A2131A54D2D700FAABF8 /* Main.storyboard in Resources */,
-				C215A2181A54D2D700FAABF8 /* LaunchScreen.xib in Resources */,
 				C215A2151A54D2D700FAABF8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +231,7 @@
 				C215A2101A54D2D700FAABF8 /* ViewController.m in Sources */,
 				C215A20D1A54D2D700FAABF8 /* AppDelegate.m in Sources */,
 				C215A20A1A54D2D600FAABF8 /* main.m in Sources */,
+				C215A2301A54D35D00FAABF8 /* DGCryptoTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C215A2241A54D2D700FAABF8 /* DGCryptoToolsTests.m in Sources */,
+				C215A2321A54D58E00FAABF8 /* Base64Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,14 +260,6 @@
 				C215A2121A54D2D700FAABF8 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C215A2161A54D2D700FAABF8 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C215A2171A54D2D700FAABF8 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -344,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DGCryptoTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DGCryptoTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +416,7 @@
 				C215A2291A54D2D700FAABF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C215A22A1A54D2D700FAABF8 /* Build configuration list for PBXNativeTarget "DGCryptoToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +425,7 @@
 				C215A22C1A54D2D700FAABF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
